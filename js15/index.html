@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="wrapper">
+        <p id="fpara">First <span>First span</span> Para</p>
+        <p id="spara">Second <span>Second span</span> Para</p>
+        <p id="tpara">Third <span>Third span</span> Para</p>
+        <p id="frpara">Fourth <span>Fourth span</span> Para</p>
+
+    </div>
+
+    <!-- <div>
+        <p id="fpara">Hello Jee</p>
+        <a id="fAnchor" href="https://github.com/DhrubTerror"> Click Here</a>
+    </div> -->
+    <script>
+            document.addEventListener("DOMContentLoaded", function () {
+      console.log("DOM fully loaded!");
+
+      // Create <script> element
+      const script = document.createElement("script");
+      script.src = "index.js";  // ✅ your existing JS file
+    //   script.async = false;     // Ensures execution in order
+
+      // Append to body (or head)
+      document.body.appendChild(script);
+    });
+    </script>
+</body>
+</html>
