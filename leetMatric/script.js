@@ -32,15 +32,13 @@ document.addEventListener("DOMContentLoaded", function () {
 //         searchButton.textContent = "Searching...";
 //         searchButton.disabled = true;
 
-//         // ✅ CORS Anywhere Proxy (must be activated manually once)
 //         const proxyUrl = "https://cors-anywhere.herokuapp.com/";
 //         const targetUrl = "https://leetcode.com/graphql/";
 
-//         // ✅ Headers
 //         const myHeaders = new Headers();
 //         myHeaders.append("Content-Type", "application/json");
 
-//         // ✅ GraphQL Query
+
 //         const graphql = JSON.stringify({
 //             query: "\n query userSessionProgress ($username: String!) {\n matchedUser(username: $username) {\n submitStats {\n acSubmissionNum {\n difficulty\n count\n }\n }\n }\n }",
 //             variables: {
@@ -48,7 +46,6 @@ document.addEventListener("DOMContentLoaded", function () {
 //             }
 //         });
 
-//         // ✅ Request Options
 //         const requestOptions = {
 //             method: "POST",
 //             headers: myHeaders,
@@ -56,19 +53,17 @@ document.addEventListener("DOMContentLoaded", function () {
 //             redirect: "follow"
 //         };
 
-//         // ✅ Fetch with CORS proxy
+
 //         const response = await fetch(proxyUrl + targetUrl, requestOptions);
 
 //         if (!response.ok) throw new Error("HTTP error: " + response.status);
 
 //         const result = await response.json();
 
-//         // ✅ Check if user exists
 //         if (!result.parseddata || !result.parseddata.matchedUser) {
 //             alert("LeetCode user not found.");
 //             return;
 //         }
-//         // ✅ Output user data
 //         console.log("LeetCode User Data:", result.data);
 //         displayUserData(parseddata);
 //     } catch (error) {
