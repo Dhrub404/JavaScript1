@@ -159,27 +159,7 @@ document.addEventListener("DOMContentLoaded", function () {
     if(validateUsername(username)){
         fetchUserDetails(username);
     }
-
-
   });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 });
